@@ -182,3 +182,27 @@ func testFunc8() {
     
 //    showKitten(kitten: .none)
 }
+
+// TODO: скрыть все цифры кроме 4х последних
+// "4556364607935616" --> "############5616"
+
+func maskify(_ string:String) -> String {
+    var array = Array(string)
+    var n = array.count - 4
+    var lastIndex = n-1
+    print(array)
+
+    for index in 0...lastIndex {
+        array[index] = "#"
+    }
+    print(array)
+
+//    for (index, number) in array.enumerated() {
+//
+//        if index
+//    }
+
+  return String(array)
+
+}
+maskify("4556364607935616")
